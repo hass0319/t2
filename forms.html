@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Tech Conference Registration</title>
+    <link rel="stylesheet" href="forms_style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>2025 Tech Conference Registration</h1>
+    </header>
+
+    <form>
+      <fieldset class="pi">
+        <legend>Personal Information</legend>
+        <label for="f_name">Full Name*:</label>
+        <input type="text" id="f_name" placeholder="Full Name" required>
+        <label for="email"> Email*:</label>
+        <input type="email" id="email" placeholder="email@email.com" required>
+        <label for="phone"> Phone Number*:</label>
+        <input type="tel" id="phone" placeholder="000-000-0000" pattern="(0-9){3}-(0-9){3}-(0-9){4}" required>
+      </fieldset>
+
+
+      <fieldset class="ed">
+        <legend>Event Details</legend>
+
+        <label for="s_date">Select Date*:</label>
+        <input type="date" id="s_date" min="2025-01-01" max="2025-01-31" value="2025-01-01" required>
+
+        <label for="p_time">Preferred Time:</label>
+        <input type="time" id="p_time" step="900">
+
+        <label for="t_type">Ticket Type*:</label>
+        <input type="text" id="t_type" list="t_type" placeholder="General Admission" required>
+
+        <datalist id="t_type">
+          <option value="General Admissin"></option>
+          <option value="Student">Student</option>
+          <option value="Standard Pass"></option>
+          <option value="VIP">VIP</option>
+        </datalist>
+      </fieldset>
+
+
+      <fieldset class="sp">
+        <legend>Session Preference</legend>
+        <label class="question">Which workshops do yo plan to attend?</label>
+
+        <div class="c_box1">
+
+          <input type="checkbox" id="w1">
+          <label for="w1"> AI & Machine Learning</label>
+        </div>
+
+        <div class="c_box2">
+          <input type="checkbox" id="w2">
+          <label for="w2"> Modern Web Development</label>
+
+        </div>
+
+
+        <div class="c_box3">
+          <input type="checkbox" id="w3">
+          <label for="w3"> Cloud Infastructure </label>
+
+        </div>
+
+        <div class="range4">
+
+          <label for="e_level"> Experience Level</label>
+          <input type="range" name="e_level" id="e_level" list="d_list" min="0" max="10" step="2" value="4" required>
+
+          <datalist id="d_list">
+            <option value="0" label="begginner"></option>
+            <option value="2"></option>
+            <option value="4"></option>
+            <option value="6"></option>
+            <option value="8"></option>
+            <option value="10" label="expert"></option>
+          </datalist>
+        </div>
+
+
+      </fieldset>
+
+
+      <fieldset class="ad">
+        <legend>Additional Details</legend>
+        <label for="upload">Upload Resume (PDF Only)</label>
+        <input type="file" id="upload" accept=".pdf" required>
+      </fieldset>
+
+
+      <button class="sub" type="submit">Register</button>
+      <button class="res" type="reset">Reset</button>
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Sales Boardt</title>
+    <link rel="stylesheet" href="tables_styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>2025 Sales Board</h1>
+    </header>
+
+    <form>
+      <label for="product">Filter by products</label>
+      <input type="text" id="product" placeholder="e.g. Widget A">
+      <input class="sub" type="submit" value="Filter">
+      <input class="res" type="reset" value="Reset">
+    </form>
+
+
+    <table>
+      <caption id="caption">Sales by product and month (Q1 & Q2 2025) </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Product</th>
+          <th colspan="3">Q1</th>
+          <th colspan="3">Q2</th>
+        </tr>
+        <tr class="month">
+          <th>January</th>
+          <th>February</th>
+          <th>March</th>
+          <th>April</th>
+          <th>May</th>
+          <th>June</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Widget A</td>
+          <td>45</td>
+          <td>34</td>
+          <td>56</td>
+          <td>200</td>
+          <td>245</td>
+          <td>654</td>
+        </tr>
+        <tr>
+          <td>Widget B</td>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+          <td>400</td>
+          <td>500</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <td>Widget C</td>
+          <td>10</td>
+          <td>20</td>
+          <td>30</td>
+          <td>40</td>
+          <td>50</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Widget D</td>
+          <td>1978</td>
+          <td>2002</td>
+          <td>3700</td>
+          <td>4500</td>
+          <td>5200</td>
+          <td>6050</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th rowspan="2">Total</th>
+          <th colspan="3">Q1</th>
+          <th colspan="3">Q2</th>
+        </tr>
+        <tr>
+          <td colspan="3">1000</td>
+          <td colspan="3">2000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+
+</html>

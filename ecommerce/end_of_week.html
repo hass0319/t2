@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="end_style.css">
+  </head>
+
+
+  <body>
+
+    <!--HEADER & NAVIGATION-->
+
+    <header>
+      <!--TOP-BAR-->
+      <nav>
+        <img src="/logo" alt="logo">
+        <div class="search">
+          <input type="search" placeholder="Search">
+          <button type="submit">Search</button>
+        </div>
+        <ul>
+
+          <li class="dropdown">
+
+            <a href="javascript:void(0)" class="dropbtn"> Account ></a>
+            <div class="dropdown-content">
+              <a href="/account">Account</a>
+              <a href="/login">Login</a>
+              <a href="reg">Register</a>
+            </div>
+
+          </li>
+
+          <li>
+            <a href="/cart">Cart (#)</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/shop"></a>
+            <forrm>
+              <label for="category"></label>
+              <select id="category">
+                <option disabled selected>Shop</option>
+                <optgroup label="category">
+                  <option value="electronics">Electronics</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="home">Home</option>
+                </optgroup>
+              </select>
+            </forrm>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!--HERO BANNER-->
+
+    <section class="hero_b">
+
+      <h1>Summer Sale: upto 50% off</h1>
+      <div>
+        <a href="/shop">
+          <img src="/shop-now" alt="Shop Now Hero Banner">
+        </a>
+
+      </div>
+    </section>
+
+
+    <!--MAIN PART: FILTER AND PRODUCTS-->
+
+    <section class="main">
+
+      <!--FILTER-->
+
+      <aside>
+        <fieldset>
+          <legend>Filters:</legend>
+          <form>
+            <div>
+              <input type="checkbox" id="cA">
+              <label for="cA"> CATEGORY A</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="cB">
+              <label for="cB"> CATEGORY B</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="cC">
+              <label for="cC"> CATEGORY C</label>
+            </div>
+
+            <div>
+              <label for="pRange"> Price Range:</label>
+
+              <label for="pRange"> 0 to $10000</label>
+              <input type="number" id="pRange" min="0" max="10000" step="1" value="##">
+
+            </div>
+          </form>
+        </fieldset>
+      </aside>
+
+      <!--PRODUCTS-->
+
+      <main class="products">
+
+        <h2 class="title">Featured Products</h2>
+
+        <div class="product-list">
+
+          <article>
+            <img src="/product1" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$10.00</p>
+            <button type="button">Add to Cart</button>
+          </article>
+
+          <article>
+            <img src="/product2" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$20.00</p>
+            <button type="button">Add to Cart</button>
+          </article>
+
+
+          <article>
+            <img src="/product3" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>$30.00</p>
+            <button type="button">Add to Cart</button>
+          </article>
+
+        </div>
+
+
+
+      </main>
+    </section>
+
+
+    <!--NEWSLETTER-->
+
+    <section class="newsletter">
+      <fieldset>
+        <Legend>Newsletter Subscription</Legend>
+        <form action="">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="submit" value="Subscribe">
+        </form>
+      </fieldset>
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Company Information</a>
+        </li>
+        <li>
+          <a href="#">Customer Service</a>
+        </li>
+        <li>
+          <a href="#">Legal</a>
+        </li>
+        <li>
+          <a href="#">Social Icons</a>
+        </li>
+      </ul>
+      <p>
+        © 2025 YourStore Inc.
+      </p>
+    </footer>
+
+  </body>
+
+</html>
